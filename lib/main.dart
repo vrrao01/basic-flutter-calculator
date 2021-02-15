@@ -44,11 +44,6 @@ class _CalculatorState extends State<Calculator> {
         }); break;
       case "0":
         if(firstLine=="0") break;
-        if(firstNumber!=0){
-          setState(() {
-            firstLine="0";
-          });
-        }
         else{
           setState(() {
             firstLine += buttonValue;
